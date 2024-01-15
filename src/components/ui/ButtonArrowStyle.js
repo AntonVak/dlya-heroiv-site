@@ -2,19 +2,18 @@ import styled from "@emotion/styled";
 
 export const styles = {
   button: {
+    position: 'relative',
     display: 'flex',
     height: '80px',
     width: '310px',
     border: '1px solid  #E2E2E2',
     borderRadius: '50px',
     alignItems: 'center',
-    position: 'relative',
+    justifyContent: 'space-between', 
+    padding: '0 20px', 
     
   },
- 
-  
 };
-
 export const Cicle = styled.div`
   position: absolute;
   height: 60px;
@@ -23,14 +22,15 @@ export const Cicle = styled.div`
   border: 1px solid  #E2E2E2;
   background-color: #FFFFFF;
   right: 10px;
-  top: 10px;
+  top: 50%; 
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
 `;
 
 export const Img = styled.img`
-  position: relative;
-  top: 50%;
-  left: 50%;
-  /* margin-top: 9px; */
+  margin: 0 auto;
+  
 
   
 `;

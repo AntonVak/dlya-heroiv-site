@@ -29,13 +29,14 @@ const theme = createTheme({
       warning: '#FF1B1C',
     },
     typography: {
+      fontSize: 14,
+        lineHeight: 400,
         fontFamily: [
-          'Unbounded sans-serif',
+          // 'Unbounded sans-serif',
           'Tektur sans-serif'
           
         ].join(','),
-        fontSize: 14,
-        lineHeight: 400,
+        
         
         
         

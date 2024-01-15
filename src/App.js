@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <OurActivities/>
       <OurValues/>
-      <OurProgress/>
+      {/* <OurProgress/> */}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import ArrowIcon from '../common/svg/arrow.svg';
 
 const ButtonArrow = ({ text, width }) => {
   return (
-    <Box sx={{ ...styles.button, width }}>
+    <Box sx={{ ...styles.button }}>
       <Typography>{text}</Typography>
       <Cicle>
         <Img src={ArrowIcon} alt={ArrowIcon} />

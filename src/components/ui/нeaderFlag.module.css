@@ -1,0 +1,15 @@
+.header_cicle {
+  
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #484848;
+  right: 0px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin: 0 auto;
+  }
+}

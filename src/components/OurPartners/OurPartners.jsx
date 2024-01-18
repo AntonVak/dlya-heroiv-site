@@ -9,7 +9,12 @@ import Logo6 from "../common/svg/CharityLogo/6.png";
 import Logo7 from "../common/svg/CharityLogo/7.png";
 import Logo8 from "../common/svg/CharityLogo/8.png";
 import Logo9 from "../common/svg/CharityLogo/9.png";
-import Logo10 from "../common/svg/CharityLogo/9.png";
+import ArrowR from "../common/svg/arrow_right.png";
+import LogoCom1 from "../common/svg/CompanyLogo/1.png";
+import LogoCom2 from "../common/svg/CompanyLogo/2.png";
+import LogoCom3 from "../common/svg/CompanyLogo/3.png";
+import LogoCom4 from "../common/svg/CompanyLogo/4.png";
+import LogoCom5 from "../common/svg/CompanyLogo/5a.png";
 
 const OurPartners = () => {
   return (
@@ -46,8 +51,10 @@ const OurPartners = () => {
             <div className={styles.border_logo}>
               <img src={Logo9} alt="" />
             </div>
-            <div className={styles.border_logo}>
-              <img src={Logo10} alt="" />
+            <div>
+              <a href="">
+                <img className={styles.border_logo} src={ArrowR} alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -55,22 +62,24 @@ const OurPartners = () => {
           <h5>Компанії</h5>
           <div className={styles.busines_logo}>
             <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+              <img src={LogoCom1} alt="" />
             </div>
             <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+              <img src={LogoCom2} alt="" />
             </div>
             <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+              <img src={LogoCom3} alt="" />
             </div>
             <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+              <img src={LogoCom4} alt="" />
             </div>
             <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+              <img src={LogoCom5} alt="" />
             </div>
-            <div className={styles.border_logo}>
-              <img src={Logo1} alt="" />
+            <div>
+              <a href="">
+                <img className={styles.border_logo} src={ArrowR} alt="" />
+              </a>
             </div>
           </div>
         </div>

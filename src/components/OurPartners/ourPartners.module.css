@@ -1,0 +1,75 @@
+* a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+h2,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.partners {
+  padding: 100px 0;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+h2 {
+  font-family: Unbounded;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 62.4px */
+  text-transform: uppercase;
+}
+.charity {
+  margin-top: 40px;
+  h5 {
+    color: #171717;
+    font-family: Unbounded;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+}
+.organization_logo {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.border_logo {
+  width: 120px;
+  height: 120px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid #e2e2e2;
+}
+.company {
+  margin-top: 40px;
+  h5 {
+    color: #171717;
+    font-family: Unbounded;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+  }
+}
+.busines_logo {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1110px) {
+  .header_nav {
+  }
+  .header_support {
+  }
+}

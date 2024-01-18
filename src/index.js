@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import theme from "./themeGlobal";
 
-import OurPartners from "./components/OurPartners";
+
 import AfterVictory from "./components/AfterVictory";
 
 
@@ -16,9 +16,6 @@ root.render(
       <CssBaseline />
       
         <App />
-      
-      {/* <OurPartners />
-      <AfterVictory /> */}
     </ThemeProvider>
   </React.StrictMode>
 );

@@ -24,8 +24,9 @@
  
   /* overflow-x: hidden; */
   overflow-x: auto;
-  max-width: calc(100% - 100px);
-  width: 1190px;
+  overflow-y: clip;
+  /* max-width: calc(100% - 100px); */
+  /* width: 1190px; */
   height: 80px;
   border: 1px solid #484848;
   border-radius: 50px;

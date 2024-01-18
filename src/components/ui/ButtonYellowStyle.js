@@ -10,7 +10,7 @@ export const Button = styled.button`
   background-color: #FCB813;
   margin-top: 45px;
   margin-left: 70px;
-  bottom: 235px;
+  bottom: 165px;
   @media only screen and (max-width: 767.8px) {
     margin: 20px 0 0 20px;
     bottom: 0px;

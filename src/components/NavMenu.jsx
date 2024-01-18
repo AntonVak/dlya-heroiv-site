@@ -11,7 +11,7 @@ import HeaderFlagCicle from "./ui/HeaderFlagCicle";
 
 const NavMenu = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.header}>
       <div className={styles.container}>
         <div className={styles.header_row}>
           <div className={styles.header_logo}>
@@ -22,23 +22,23 @@ const NavMenu = () => {
           <div className={styles.header_menu}>
             <div className={styles.header_nav}>
               <a href="#">
-                <div>Про фонд</div>
+                <div className={styles.header_nav_text}>Про фонд</div>
               </a>
               <a href="#">
-                <div>Проєкти</div>
+                <div className={styles.header_nav_text}>Проєкти</div>
               </a>
               <a href="*">
-                <div>Звітність</div>
+                <div className={styles.header_nav_text}>Звітність</div>
               </a>
               <a href="*">
-                <div>Стати партнером</div>
+                <div className={styles.header_nav_text}>Стати партнером</div>
               </a>
             </div>
 
             <div className={styles.header_support}>
               <HeaderFlagCicle />
               <a href="#">
-                <div>Підтримати</div>
+                <div className={styles.header_nav_text}>Підтримати</div>
               </a>
             </div>
             <div className={styles.header_social}>

@@ -1,0 +1,16 @@
+* a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.slider {
+  height: 825px;
+  background-image: url("./common/img/dark-texture-watercolor 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.4; */
+  
+     
+  /* mix-blend-mode: color-dodge; */
+}

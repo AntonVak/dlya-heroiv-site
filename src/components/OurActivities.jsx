@@ -27,20 +27,20 @@ const OurActivities = () => {
             </Box>
 
             <Box sx={{ ...styles.button, ...styles.button2 }}>
-              <Typography>Допомога медичним закладам</Typography>
+              <Typography sx={{ pr: 8}}>Допомога медичним закладам</Typography>
               <Cicle>
                 <Img src={ArrowIcon} alt={ArrowIcon} />
               </Cicle>
             </Box>
           </Box>
           <Box sx={{ ...styles.button, ...styles.button3 }}>
-            <Typography>Допомога постраждалому населенню</Typography>
+            <Typography sx={{ pr: 8}}>Допомога постраждалому населенню</Typography>
             <Cicle>
               <Img src={ArrowIcon} alt={ArrowIcon} />
             </Cicle>
           </Box>
           <Box sx={{ ...styles.button, ...styles.button4 }}>
-            <Typography>
+            <Typography sx={{ pr: 8}}>
               Інтеграція закордонних зацікавлених партнерів/донорів
             </Typography>
             <Cicle>

@@ -6,10 +6,9 @@ import NumberTextStyle from "./stylesGlobal/ProgressTextStyle";
 import { Container } from "./stylesGlobal/Container";
 
 const OurProgress = () => {
-  
   return (
     <section className={style.section}>
-      <Container >
+      <Container>
         <div className={style.team}>
           <div className={style.title}>досягнення нашої команди</div>
           <img src={TeamImg} alt="" />
@@ -17,41 +16,47 @@ const OurProgress = () => {
             <p className={style.btn_text}>Хочу підтримати</p>
           </button>
         </div>
-      
 
-      <Grid container spacing={1} sx={styles.wrapper_grid}>
-        <Grid item xs={2.5}>
-          <NumberTextStyle>120+</NumberTextStyle>
-          <Typography variant="h6" color="text.primary">
-            <span style={{ fontWeight: 700 }}>тон гуманітарної допомоги</span>
-            доставлено до прифронтових зон
-          </Typography>
-        </Grid>
-        <Grid item xs={2.5}>
-          <NumberTextStyle>
-            14 <span style={{ fontSize: "16px" }}>млн грн</span>
-          </NumberTextStyle>
-          <Typography variant="h6" color="text.primary">
-            <span style={{ fontWeight: 700 }}>
-              зібрано на потреби захисників України
-            </span>
-          </Typography>
-        </Grid>
-        <Grid item xs={2.5}>
-          <NumberTextStyle>25+</NumberTextStyle>
-          <Typography variant="h6" color="text.primary">
-            <span style={{ fontWeight: 700 }}>військових підрозділів</span>, з
-            якими співпрацюємо на регулярній основі
-          </Typography>
-        </Grid>
-        <Grid item xs={2.5}>
-          <NumberTextStyle>50+</NumberTextStyle>
-          <Typography variant="h6" color="text.primary">
-            <span style={{ fontWeight: 700 }}>дронів передані військовим</span>
-            від закордонних партнерів
-          </Typography>
-        </Grid>
-      </Grid>
+        <div className={style.stats_wraper}>
+          <div className={style.stats_card}>
+            <div className={style.stats_title}>120+</div>
+            <div className={style.stats_subtitle}>
+              <span className={style.stats_span}>
+                тон гуманітарної допомоги
+              </span>{" "}
+              доставлено до прифронтових зон
+            </div>
+          </div>
+
+          <div>
+            <div className={style.stats_title}>
+              14 <span>млн грн</span>
+            </div>
+            <div className={style.stats_subtitle}>
+              <span className={style.stats_span}>
+                зібрано на потреби захисників України
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <div className={style.stats_title}>25+</div>
+            <div className={style.stats_subtitle}>
+              <span className={style.stats_span}>військових підрозділів </span>з
+              якими співпрацюємо на регулярній основі
+            </div>
+          </div>
+
+          <div>
+            <div className={style.stats_title}>50+</div>
+            <div className={style.stats_subtitle}>
+              <span className={style.stats_span}>
+                дронів передані військовим
+              </span>{" "}
+              від закордонних партнерів
+            </div>
+          </div>
+        </div>
       </Container>
     </section>
   );

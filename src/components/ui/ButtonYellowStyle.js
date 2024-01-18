@@ -9,6 +9,12 @@ export const Button = styled.button`
   border-radius: 50px;
   background-color: #FCB813;
   margin-top: 45px;
+  margin-left: 70px;
+  bottom: 235px;
+  @media only screen and (max-width: 767.8px) {
+    margin: 20px 0 0 20px;
+    bottom: 0px;
+}
 
 `;
 export const Cicle = styled.div`

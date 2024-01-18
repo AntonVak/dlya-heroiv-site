@@ -11,10 +11,10 @@ const OurProgress = () => {
       <Container>
         <div className={style.team}>
           <div className={style.title}>досягнення нашої команди</div>
-          <img src={TeamImg} alt="" />
+          {/* <img src={TeamImg} alt="" />
           <button className={style.button}>
             <p className={style.btn_text}>Хочу підтримати</p>
-          </button>
+          </button> */}
         </div>
 
         <div className={style.stats_wraper}>
@@ -30,7 +30,7 @@ const OurProgress = () => {
 
           <div>
             <div className={style.stats_title}>
-              14 <span>млн грн</span>
+              14<span>млн грн</span>
             </div>
             <div className={style.stats_subtitle}>
               <span className={style.stats_span}>
@@ -56,6 +56,12 @@ const OurProgress = () => {
               від закордонних партнерів
             </div>
           </div>
+        </div>
+        <div className={style.team_footer}>
+          <img src={TeamImg} alt="" />
+          <button className={style.button}>
+            <p className={style.btn_text}>Хочу підтримати</p>
+          </button>
         </div>
       </Container>
     </section>

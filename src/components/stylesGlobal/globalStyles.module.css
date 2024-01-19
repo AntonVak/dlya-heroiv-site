@@ -1,0 +1,39 @@
+:root {
+  --main-color: #ff0000; /* Красный цвет - замените на свой цвет */
+  --secondary-color: #00ff00; /* Зеленый цвет - замените на свой цвет */
+  --main-black: #171717;
+  --secondary-black: #1a181d;
+  --white: #fff;
+  --yellow: #fcb813;
+  --grey: #b1b1b1;
+}
+
+.title {
+  font-family: Unbounded;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* Our Team */
+.text16B {
+  color: var(--secondary-black);
+  font-family: Unbounded;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.8px;
+}
+
+.text12Fw4 {
+    color: var(--Style, #1A181D);
+    font-family: Unbounded;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 24px */
+}
+

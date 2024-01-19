@@ -1,5 +1,6 @@
 // import NavMenu from "./components/NavMenu";
 import ForWhat from "./components/AboutUs/ForWhat";
+import OurTeam from "./components/AboutUs/OurTeam";
 import AfterVictory from "./components/AfterVictory/AfterVictory";
 import OurActivities from "./components/OurActivities";
 import OurPartners from "./components/OurPartners/OurPartners";
@@ -19,6 +20,7 @@ function App() {
       <AfterVictory/>
       <PayInfo/>
       <ForWhat/>
+      <OurTeam/>
     </div>
   );
 }

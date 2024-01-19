@@ -8,15 +8,44 @@ h5 {
   margin: 0;
   padding: 0;
 }
+p {
+  fontWeight: 400;
+  margin: 0;
+  padding: 0;
+}
 
-.partners {
-  padding: 100px 0;
+.afterVictory {
+  position: relative;
+  background-image: url("../common/img/dark-texture-watercolor 1.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  /* width: 100vw; */
+  /* display: flex;
+  justify-content: space-between; */
+  overflow: hidden
+}
+.bg_foto {
+  position: absolute;
+  height: 100%;
+  width: 730px;
+  background-image: url("../common/img/boy-with-ukrainian-flag.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left:729px;
+}
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  /* background-image: url("../common/img/dark-texture-watercolor 1.png");
+  background-repeat: no-repeat;  */
 }
 .container {
   max-width: 1440px;
   padding: 0 70px;
   margin: 0 auto;
-  
+  /* margin: 100px 0; */
 }
 h2 {
   font-family: Unbounded;

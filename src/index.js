@@ -6,7 +6,7 @@ import App from "./App";
 import theme from "./themeGlobal";
 
 
-import AfterVictory from "./components/AfterVictory";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -7,6 +7,25 @@
   --yellow: #fcb813;
   --grey: #b1b1b1;
 }
+* a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h2,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  fontweight: 400;
+  margin: 0;
+  padding: 0;
+}
 
 .title {
   font-family: Unbounded;
@@ -16,6 +35,10 @@
   line-height: 130%;
   text-transform: uppercase;
   margin-right: 20px;
+  @media (max-width: 500px) {
+    font-size: 34px;
+    margin-right: 0px;
+  }
 }
 /* Our Team */
 .text16B {

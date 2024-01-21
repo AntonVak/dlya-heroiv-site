@@ -10,6 +10,7 @@ import OurValues from "./components/OurValues";
 import PayInfo from "./components/PayInfo/PayInfo";
 import SlickSlider from "./components/SlickSlider";
 import TalkAboutUs from "./components/TalkAboutUs/TalkAboutUs";
+import Certificates from "./components/Сertificates/Сertificates";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <OurTeam />
       <HistoryFund />
       <TalkAboutUs/>
+      <Certificates/>
     </div>
   );
 }

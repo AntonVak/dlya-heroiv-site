@@ -60,3 +60,13 @@ p {
     line-height: 200%; /* 24px */
 }
 
+.text14B {
+  color: var(--main-black);
+font-family: Unbounded;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; 
+letter-spacing: 0.7px;
+}
+

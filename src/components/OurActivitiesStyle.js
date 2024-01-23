@@ -81,6 +81,7 @@ export const Cicle = styled.div`
   transform: translateY(-50%);
   display: flex;
   align-items: center;
+  
 `;
 
 export const Img = styled.img`

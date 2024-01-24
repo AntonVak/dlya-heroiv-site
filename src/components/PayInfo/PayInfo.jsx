@@ -6,7 +6,12 @@ import Avatar2 from "../common/svg/Volodymir.png";
 import monoSvg from "../common/svg/mono.png";
 import paypalSvg from "../common/svg/paypal.png";
 import bitcoinSvg from "../common/svg/bitcoin.png";
+import bottom_line from "../common/svg/line_bottom.png";
 import FormUAH from "./FormUAH";
+import FormUSD from "./FormUSD";
+import FormMono from "./FormMono";
+import FormPaypal from "./FormPaypal";
+import FormCrypto from "./FormCrypto";
 
 const PayInfo = () => {
   return (
@@ -21,7 +26,7 @@ const PayInfo = () => {
             </p>
 
             <h5>Buy Me A Coffee:</h5>
-            <div className={styles.btns_coffee}>
+            <div className={styles.btns_wrapper}>
               <ButtonCoffee name="Roman" avatar={Avatar1} />
               <ButtonCoffee name="Volodymyr" avatar={Avatar2} />
             </div>
@@ -29,37 +34,43 @@ const PayInfo = () => {
           <div className={styles.right_block}>
             <div className={styles.payInfo_requisites}>
               <div className={styles.border_logo}>
-                <div className={styles.name_method}>Реквізити UAH</div>
+                <div className={styles.name_method}><span>Реквізити</span> UAH</div>
               </div>
               <div className={styles.border_logo}>
-                <div className={styles.name_method}>Реквізити USD</div>
+                <div className={styles.name_method}><span>Реквізити</span> USD</div>
               </div>
               <div className={styles.border_logo}>
-                <img
-                  style={{ width: "70px", height: "30px" }}
+                <img className={styles.mono_img}
                   src={monoSvg}
                   alt="mono img"
                 />
               </div>
               <div className={styles.border_logo}>
-                <img
-                  style={{ width: "60px", height: "46px" }}
+                <img className={styles.paypal_img}
                   src={paypalSvg}
                   alt="paypalimg"
                 />
               </div>
               <div className={styles.border_logo}>
-                <img
-                  style={{ width: "60px", height: "60px" }}
+                <img className={styles.bitcoin_img}
                   src={bitcoinSvg}
                   alt="bitcoin img"
                 />
               </div>
             </div>
             <FormUAH />
+            <FormUSD />
+            <FormMono/>
+            <FormPaypal/>
+            <FormCrypto/>
           </div>
         </div>
       </div>
+      <div>
+        <img src={bottom_line} alt="svg" />
+      </div>
+      
+
     </section>
   );
 };

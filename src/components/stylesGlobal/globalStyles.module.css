@@ -95,6 +95,14 @@ p {
   font-weight: 700;
   line-height: 140%; /* 25.2px */
 }
+.text10Fw4 {
+  color: var(--grey, #b1b1b1);
+  font-family: Unbounded;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
 
 .button_arrow {
   position: relative;
@@ -123,3 +131,33 @@ p {
     margin: 0 auto;
   }
 }
+
+/* Button  requisites UAH, USD, Crypto*/
+.button_copy {
+  position: relative;
+  display: flex;
+  height: 80px;
+  max-width: 640px;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.round_bg_copy {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  background-color: var(--white);
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+/* END*/

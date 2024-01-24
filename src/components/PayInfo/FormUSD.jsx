@@ -3,14 +3,14 @@ import globalStyles from "../stylesGlobal/globalStyles.module.css";
 
 import copyImg from "../common/svg/copy.svg";
 
-const FormUAH = () => {
+const FormUSD = () => {
   return (
     <div className={` ${styles.requisites_wrapper}`}>
       <div className={`${globalStyles.button_copy} ${styles._button_copy}`}>
         <div className={` ${styles.text_wrapper}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             {" "}
-            Отримувач
+            Назва компанії / company Name
           </div>
           <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
             {" "}
@@ -25,11 +25,11 @@ const FormUAH = () => {
         <div className={` ${styles.text_wrapper}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             {" "}
-            Код одержувача:
+            SWIFT Code
           </div>
           <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
             {" "}
-            44872241
+            PBANUA2X
           </div>
         </div>
         <div className={`${globalStyles.round_bg_copy}`}>
@@ -40,11 +40,11 @@ const FormUAH = () => {
         <div className={` ${styles.text_wrapper}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             {" "}
-            Банк:
+            Назва банку / Name of the bank
           </div>
           <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
             {" "}
-            АТ КБ «ПриватБанк»
+            JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
           </div>
         </div>
         <div className={`${globalStyles.round_bg_copy}`}>
@@ -59,7 +59,22 @@ const FormUAH = () => {
           </div>
           <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
             {" "}
-            UA283052990000026000050563084
+            UA573052990000026005050571219
+          </div>
+        </div>
+        <div className={`${globalStyles.round_bg_copy}`}>
+          <img src={copyImg} alt="svg" />
+        </div>
+      </div>
+      <div className={`${globalStyles.button_copy} ${styles._button_copy}`}>
+        <div className={` ${styles.text_wrapper}`}>
+          <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
+            {" "}
+            Адреса компанії / Company address
+          </div>
+          <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
+            {" "}
+            49000, УКРАЇНА, ОБЛ. ДНІПРОПЕТРОВСЬКА, М. ДНІПРО, ВУЛ. ВОЛОДИМИРА МОССАКОВСЬКОГО, Б. 8
           </div>
         </div>
         <div className={`${globalStyles.round_bg_copy}`}>
@@ -70,4 +85,4 @@ const FormUAH = () => {
   );
 };
 
-export default FormUAH;
+export default FormUSD;

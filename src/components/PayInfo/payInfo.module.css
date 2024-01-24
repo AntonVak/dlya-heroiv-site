@@ -1,27 +1,4 @@
-* a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-h2,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-p {
-  fontweight: 400;
-  margin: 0;
-  padding: 0;
-}
-/* img {
-  display: "block";
-  maxwidth: "100%";
-  height: "auto";
-} */
+@import "../stylesGlobal/globalStyles.module.css";
 
 .payInfo {
   overflow: hidden;
@@ -70,7 +47,7 @@ p {
   }
 }
 
-.btns_coffee {
+.btns_wrapper {
   margin-top: 20px;
   display: flex;
   gap: 20px;
@@ -138,9 +115,21 @@ p {
   border-radius: 40px;
   border: 1px solid #e2e2e2;
   img {
-    width: 106px;
+    
     margin: 0 auto;
   }
+}
+.paypal_img {
+  width: 60px;
+  height: 46px;
+}
+.bitcoin_img {
+  width: 60px;
+  height: 60px;
+}
+.mono_img {
+  width: 70px;
+  height: 30px;
 }
 
 .name_method {
@@ -152,35 +141,120 @@ p {
   font-weight: 400;
   line-height: 20px;
 }
-/* Style Input */
-.form_wrapper {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 20px 0 20px;
+/* FormUAH component*/
+.requisites_wrapper {
+  margin-top: 30px;
+  .mono_item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+._button_copy {
+  margin-top: 10px;
+  min-height: 80px;
+  height: 100%;
+  width: 100%;
 }
 
-.form_input {
-  position: absolute;
-  width: 500px;
-  height: 80px;
+.text_wrapper {
+  margin-left: 30px;
+}
+._text10Fw4 {
+  padding-bottom: 6px;
+}
+._text14Fw4 {
+  padding-right: 50px;
+}
+
+/* FormMONO component*/
+.mono_item {
+  width: 100%;
+  /* flex-shrink: 0; */
   border-radius: 20px;
   border: 1px solid #e2e2e2;
-  outline: none;
-  font-family: Unbounded;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 40px 80px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-.form_input placeholder {
-  color: #b1b1b1;
-  font-family: Unbounded;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 20px;
-  
+
+.block_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
 }
+.money_text {
+  margin-top: auto;
+}
+.price_text {
+  white-space: nowrap;
+}
+._text18B {
+  max-width: 160px;
+}
+.number_card {
+  padding-right: 60px;
+}
+.round_mono {
+  right: 1px;
+}
+.block_right {
+  /* max-width: 320px; */
+  width: 100%;
+  /* padding-left: 100px; */
+}
+._text10Fw4 {
+  color: var(--main-black, #171717);
+}
+.flex_wrapper {
+  display: flex;
+  position: relative;
+}
+
+.card_wrapper {
+  margin-top: 12px;
+}
+
+.button_link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  border: 1px solid var(--yellow);
+  border-radius: 170px;
+  background-color: var(--yellow);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+.round_bg_mono {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* border: 1px solid #E2E2E2; */
+  background-color: var(--main-black);
+
+  left: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.text14Fw4_mono {
+  padding-left: 45px;
+}
+.crypto_text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+/* 
 .form_btn {
   cursor: pointer;
   border: none;
@@ -189,28 +263,112 @@ p {
 .form_svg {
   position: relative;
   left: 430px;
-}
+} */
 
-@media (max-width: 1110px) {
-  .header_nav {
+@media (max-width: 1024px) {
+  .payInfo_wraper {
+    display: flex;
+    flex-direction: column;
   }
-  .header_support {
+  .left_block {
+    width: 100%;
+    h5 {
+      text-align: center;
+    }
+  }
+  .btns_wrapper {
+    justify-content: space-around;
+  }
+  .right_block {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .requisites_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
-  .partners {
-    height: 100%;
-  }
   .container {
-    margin: 180px 0;
+    margin: 60px 0;
     padding: 0 20px;
+  }
+  /* .payInfo_wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  .left_block {
+    width: 100%;
+    h5 {
+      text-align: left;
+    }
+    h2 {
+      font-size: 34px;
+    }
+  }
+  .right_block {
+    width: 500px;
+    align-items: center;
+    
+  }
+  .btns_wrapper {
+    justify-content: flex-start;
+  }
+  .payInfo_requisites {
+    gap: 40px;
+  }
+  .border_logo {
+    width: 65px;
+    height: 55px;
+    border-radius: 20px;
+  }
+  .name_method {
+    span {
+      display: none;
+    }
+  }
+  .mono_img {
+    width: 36px;
+    height: 15px;
+  }
+  .paypal_img {
+    width: 32px;
+    height: 24px;
+  }
+  .bitcoin_img {
+    width: 32px;
+    height: 32px;
+  }
+  ._button_copy {
+    max-width: 485px;
   }
 }
 @media (max-width: 424.8px) {
-  .container {
-    margin: 80px 0;
+  .left_block {
+    h2 {
+      font-size: 30px;
+    }
   }
-  h2 {
-    font-size: 34px;
+  .right_block {
+    width: 100%;
+    align-items: center;
+    
+  }
+  .payInfo_requisites {
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .border_logo {
+    width: 55px;
+    height: 47px;
+   
   }
 }

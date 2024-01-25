@@ -14,6 +14,7 @@ import Certificates from "./components/AboutUs page/Сertificates";
 import AboutFund from "./components/ToBePartnerPage/AboutFund";
 import PartnersShip from "./components/ToBePartnerPage/Partnership";
 import ThankesPartners from "./components/ToBePartnerPage/ThankesPartners";
+import OurProgectsPage from "./components/Page Projects/OurProgectsPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <AboutFund/>
       <PartnersShip/>
       <ThankesPartners/>
+      <OurProgectsPage/>
     </div>
   );
 }

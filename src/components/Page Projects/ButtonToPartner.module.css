@@ -1,0 +1,88 @@
+@import "../stylesGlobal/globalStyles.module.css";
+
+.btn_topartner {
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: 240px;
+  border: 1px solid var(--yellow);
+  border-radius: 160px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+.round_bg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.text14Fw4_btn {
+  padding-left: 40px;
+  white-space: nowrap;
+}
+/* Button foto */
+
+.btn_foto {
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: 165px;
+  border: 1px solid var(--grey);
+  background-color: var(--white);
+  border-radius: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.round_bg_black {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #000;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.text_btn_foto {
+  padding-left: 40px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .btn_topartner {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .btn_foto {
+    width: 130px;
+  }
+  .text_btn_foto {
+    font-size: 12px;
+    padding-left: 33px;
+    white-space: nowrap;
+  }
+ 
+}

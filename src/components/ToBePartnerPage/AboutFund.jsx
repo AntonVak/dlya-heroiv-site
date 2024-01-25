@@ -48,7 +48,7 @@ const AboutFund = () => {
           <div className={styles.block_right}>
             {/* <div className={styles.img_foto}></div> */}
             
-            < img className={styles.img_foto1} src={Img1} alt="" />
+            <img className={styles.img_foto1} src={Img1} alt="" />
             <img className={styles.img_foto2} src={Img2} alt="" />
           </div>
         </div>

@@ -8,12 +8,12 @@ const FormMono = () => {
   return (
     <div className={` ${styles.requisites_wrapper}`}>
       <div className={`${styles.mono_item}`}>
-      <div className={` ${styles.block_left}`}>
+      <div className={` ${styles.mono_left}`}>
         <div className={`${globalStyles.text18B} ${styles._text18B}`}>
           Банка ДЛЯ ГЕРОЇВ
         </div>
         </div>
-        <div className={` ${styles.block_right}`}>
+        <div className={` ${styles.mono_right}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             Цю банку створено для підтримки діяльності БФ "ДЛЯ ГЕРОЇВ", а також
             для короткострокових проєктів.Разом до ПЕРЕМОГИ! 💛💙
@@ -38,7 +38,7 @@ const FormMono = () => {
         </div>
       </div>
       <div className={`${styles.mono_item}`}>
-        <div className={` ${styles.block_left}`}>
+        <div className={` ${styles.mono_left}`}>
           <div className={`${globalStyles.text18B} ${styles._text18B}`}>
             Банка На Дрони
           </div>
@@ -49,7 +49,7 @@ const FormMono = () => {
             </div>
           </div>
         </div>
-        <div className={` ${styles.block_right}`}>
+        <div className={` ${styles.mono_right}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             Долучайтесь! Військовим потрібно більше дронів, щоб і далі мати
             перевагу на полі бою і ефективно нищити окупантів!
@@ -76,7 +76,7 @@ const FormMono = () => {
         </div>
       </div>
       <div className={`${styles.mono_item}`}>
-        <div className={` ${styles.block_left}`}>
+        <div className={` ${styles.mono_left}`}>
           <div className={`${globalStyles.text18B} ${styles._text18B}`}>
             Банка На 3Д Друк
           </div>
@@ -87,7 +87,7 @@ const FormMono = () => {
             </div>
           </div>
         </div>
-        <div className={` ${styles.block_right}`}>
+        <div className={` ${styles.mono_right}`}>
           <div className={`${globalStyles.text10Fw4} ${styles._text10Fw4}`}>
             Друк 3D моделей на потреби ЗСУ. Нам потрібна Ваша допомога для
             закупівлі філаменту - матеріалу, з якого друкуються моделі.

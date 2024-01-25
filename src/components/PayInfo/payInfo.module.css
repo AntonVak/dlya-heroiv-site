@@ -115,7 +115,6 @@
   border-radius: 40px;
   border: 1px solid #e2e2e2;
   img {
-    
     margin: 0 auto;
   }
 }
@@ -153,11 +152,13 @@
   min-height: 80px;
   height: 100%;
   width: 100%;
+  justify-content: flex-start;
+}
+._button_copy {
+  justify-content: flex-start;
 }
 
-.text_wrapper {
-  margin-left: 30px;
-}
+
 ._text10Fw4 {
   padding-bottom: 6px;
 }
@@ -176,7 +177,7 @@
   padding: 20px;
 }
 
-.block_left {
+.mono_left {
   display: flex;
   flex-direction: column;
   margin-right: 45px;
@@ -196,7 +197,7 @@
 .round_mono {
   right: 1px;
 }
-.block_right {
+.mono_right {
   /* max-width: 320px; */
   width: 100%;
   /* padding-left: 100px; */
@@ -251,19 +252,22 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 100px;
+  padding-right: 60px;
+  text-align: left;
+  max-width: calc(30vw + (100vw - 105vw));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text_wrapper {
+  padding-left: 20px;
+}
+.iban_text {
+  word-break: break-all;
+  padding-right: 70px;
 }
 
-/* 
-.form_btn {
-  cursor: pointer;
-  border: none;
-  display: flex;
-}
-.form_svg {
-  position: relative;
-  left: 430px;
-} */
+
 
 @media (max-width: 1024px) {
   .payInfo_wraper {
@@ -282,16 +286,27 @@
   .right_block {
     width: 100%;
     margin-left: 0px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+  .mono_item {
+    width: 640px;
+  }
+
   .requisites_wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .crypto_text {
+    max-width: calc(30vw + (100vw - 87vw));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 @media (max-width: 768px) {
@@ -314,15 +329,15 @@
     }
   }
   .right_block {
-    width: 500px;
+    width: 100%;
     align-items: center;
-    
+    justify-content: center;
   }
   .btns_wrapper {
     justify-content: flex-start;
   }
   .payInfo_requisites {
-    gap: 40px;
+    gap: 10px;
   }
   .border_logo {
     width: 65px;
@@ -348,7 +363,29 @@
   }
   ._button_copy {
     max-width: 485px;
+    justify-content: flex-start;
   }
+ 
+  .text_wrapper {
+    margin-left: 0px;
+  }
+  .crypto_text {
+    max-width: calc(35vw + (100vw - 85vw));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .mono_item {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .mono_right {
+    margin-top: 30px;
+  }
+  .money_text {
+    margin-top: 20px;
+  }
+  
 }
 @media (max-width: 424.8px) {
   .left_block {
@@ -359,16 +396,36 @@
   .right_block {
     width: 100%;
     align-items: center;
-    
   }
   .payInfo_requisites {
     gap: 10px;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
   .border_logo {
     width: 55px;
     height: 47px;
-   
+  }
+  
+  
+  .btns_wrapper {
+    flex-direction: column;
+  }
+  .btn_coffee {
+    width: 100%;
+  }
+  .paypal_email {
+    word-break: break-all;
+    padding-right: 50px;
+  }
+  
+  ._button_copy {
+    justify-content: flex-start;
+  }
+  .crypto_text {
+    max-width: calc(45vw + (100vw - 87vw));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

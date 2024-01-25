@@ -12,7 +12,7 @@ const FormPaypal = () => {
             {" "}
             Пошта
           </div>
-          <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
+          <div className={`${globalStyles.text14Fw4} ${styles.paypal_email}`}>
             {" "}
             dlya.heroiv.ukraine@gmail.com
           </div>

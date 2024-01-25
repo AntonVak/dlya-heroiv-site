@@ -57,7 +57,7 @@ const FormUSD = () => {
             {" "}
             IBAN:
           </div>
-          <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
+          <div className={`${globalStyles.text14Fw4} ${styles.iban_text}`}>
             {" "}
             UA573052990000026005050571219
           </div>

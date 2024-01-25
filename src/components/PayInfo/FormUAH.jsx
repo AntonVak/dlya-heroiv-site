@@ -57,7 +57,7 @@ const FormUAH = () => {
             {" "}
             IBAN:
           </div>
-          <div className={`${globalStyles.text14Fw4} ${styles._text14Fw4}`}>
+          <div className={`${globalStyles.text14Fw4} ${styles.iban_text}`}>
             {" "}
             UA283052990000026000050563084
           </div>

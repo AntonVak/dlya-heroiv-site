@@ -1,0 +1,54 @@
+@import "../stylesGlobal/globalStyles.module.css";
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 100px auto;
+}
+.title_block {
+  display: flex;
+}
+.finish_title {
+
+}
+.wrapper_block {
+margin: 40px 0 20px 0;
+display: flex;
+gap: 20px;
+}
+.item_block {
+
+}
+.text_block {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+
+}
+._text16B {
+  color: var(--txt-black, #171717);
+  font-family: Unbounded;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; 
+  letter-spacing: 0.8px;
+  max-width: 300px;
+}
+/* BtnRoundArrow */
+.round_bg {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  background-color: var(--white);
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}

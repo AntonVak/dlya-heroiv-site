@@ -161,3 +161,18 @@ p {
   }
 }
 /* END*/
+
+/* Button slider*/
+.round_bg_slide {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  background-color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}

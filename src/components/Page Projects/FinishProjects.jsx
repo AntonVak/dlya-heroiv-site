@@ -28,7 +28,15 @@ const FinishProjects = () => {
         }
       },
       {
-        breakpoint: 764,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
+        }
+      },
+      {
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -45,8 +53,6 @@ const FinishProjects = () => {
             Завершені проєкти
           </div>
           <div className={styles.btn_slider}>
-            {/* <ButtonSliderLeft />
-            <ButtonSliderRight /> */}
           </div>
         </div>
         {/* <div className={styles.wrapper_block}>

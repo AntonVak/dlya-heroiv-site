@@ -1,14 +1,12 @@
 import style from "./ourProgress.module.css";
 import TeamImg from "./common/img/comands.png";
-import { Grid, Typography } from "@mui/material";
-import { styles } from "./OurProgressStyle";
-import NumberTextStyle from "./stylesGlobal/ProgressTextStyle";
-import { Container } from "./stylesGlobal/Container";
+
+import bottom_line from "./common/svg/line_bottom.png";
 
 const OurProgress = () => {
   return (
     <section className={style.section}>
-      <Container>
+      <div className={style.container}>
         <div className={style.team}>
           <div className={style.title}>досягнення нашої команди</div>
           {/* <img src={TeamImg} alt="" />
@@ -63,7 +61,10 @@ const OurProgress = () => {
             <p className={style.btn_text}>Хочу підтримати</p>
           </button>
         </div>
-      </Container>
+      </div>
+      <div>
+        <img className={style.bottom_line_img} src={bottom_line} alt="svg" />
+      </div>
     </section>
   );
 };

@@ -6,7 +6,6 @@
   margin: 100px 0;
 }
 .afterVictory {
-  /* height: 1000px; */
 }
 .victory_wrapper {
   display: flex;
@@ -44,9 +43,10 @@
 }
 
 .block_right {
-  width: 50%;
+  width: 60%;
   background-image: url("../common/img/boy-with-ukrainian-flag.png");
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
 }
 .victory_wrapper {
 }
@@ -57,38 +57,43 @@
   .header_support {
   }
 }
-@media (max-width: 768px) {
-  .afterVictory {
-    
-  }
-  .container {
-    margin: 0px 0;
-  }
+@media (max-width: 900px) {
   .victory_wrapper {
     display: block;
     /* flex-direction: column;
     align-items: center; */
     /* align-items: center; */
   }
-  .block_left {
-    width: 100%;
-    padding: 0 20px;
-  }
   .top_text {
     margin-top: 0px;
     padding-top: 70px;
   }
-  .text12Fw4_3 {
-    padding-bottom: 50px;
-   
+  .block_left {
+    width: 100%;
+    padding: 0 20px;
   }
   .block_right {
     width: 100%;
     background-image: url("../common/img/boy-with-ukrainian-flag.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 942px;
     margin-top: 0px;
+  }
+  .text12Fw4_3 {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0px 0;
+  }
+  .block_right {
+    height: 460px;
+  }
+
+  .text12Fw4_3 {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 424.8px) {
@@ -97,12 +102,13 @@
   }
   .block_left {
     height: 100%;
-    flex: 1
-    
+    flex: 1;
+  }
+  .block_right {
+    height: 410px;
   }
   .text12Fw4_3 {
-  padding-bottom: 0px;
-  padding-bottom: 20px;
-    
+    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 }

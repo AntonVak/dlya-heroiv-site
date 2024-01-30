@@ -26,7 +26,7 @@ const OurTeam = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 6,
+    slidesToShow: 0,
     slidesToScroll: 1,
     className: "center",
     centerMode: true,
@@ -40,7 +40,7 @@ const OurTeam = () => {
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -68,8 +68,7 @@ const OurTeam = () => {
           <div className={`${globalStyles.title}`}>наша команда</div>
         </div>
         <div className={styles.block_foto2}>
-        <Slider {...settings}></Slider>
-
+          
 
           {/* <Slider {...settings}>
             <div>

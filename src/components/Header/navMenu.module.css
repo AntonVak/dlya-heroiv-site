@@ -1,15 +1,23 @@
-* a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
+@import "../stylesGlobal/globalStyles.module.css";
+
+
 
 .header {
- 
+  height: 100vh;
+  background-image: url("../common/img/dark_bg.png");
+  
+  
+}
+.header_title1, 
+.header_title2 {
+  color: var(--white);
+}
+.header_text16B {
+  color: var(--white);
 }
 .container {
   max-width: 1440px;
-  padding: 0 20px;
+  padding: 0 70px;
   margin: 0 auto;
 }
 

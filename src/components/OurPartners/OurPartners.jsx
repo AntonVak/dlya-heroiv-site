@@ -28,7 +28,7 @@ const OurPartners = () => {
       {
         breakpoint: 1441,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 8,
           slidesToScroll: 1,
         },
       },

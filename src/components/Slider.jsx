@@ -1,5 +1,5 @@
 import React from "react";
-import NavMenu from "./NavMenu";
+import NavMenu from "./Header/NavMenu";
 import styles from "./slider.module.css";
 
 

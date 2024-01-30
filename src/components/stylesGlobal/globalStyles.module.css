@@ -40,6 +40,17 @@ p {
     margin-right: 0px;
   }
 }
+.header_title {
+  color: #FFF;
+  font-family: Unbounded;
+  font-size: 116.648px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 151.642px */
+  letter-spacing: 5.832px;
+  text-transform: uppercase;
+}
+
 /* Our Team */
 .text16B {
   color: var(--secondary-black);
@@ -166,6 +177,21 @@ p {
 .round_bg_slide {
   height: 60px;
   width: 60px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  background-color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+
+/* Flag Round in HistoryFund */
+.round_bg_history {
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   border: 1px solid #E2E2E2;
   background-color: var(--white);

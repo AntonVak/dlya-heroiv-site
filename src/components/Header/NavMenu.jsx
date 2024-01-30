@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./navMenu.module.css";
-import LogoIcon from "./common/svg/logo (1).svg";
-import TwitterIcon from "./ui/icons/TwitterIcon";
-import FacebookIcon from "./common/svg/Social/Facebook.svg";
-import InstagramIcon from "./common/svg/Social/Instagram.png";
-import YoutubeIcon from "./common/svg/Social/YouTube.png";
-import TiktokIcon from "./common/svg/Social/Tiktok.png";
-import web from "./common/svg/www.svg";
-import HeaderFlagCicle from "./ui/HeaderFlagCicle";
+import LogoIcon from "../common/svg/logo (1).svg";
+import TwitterIcon from "../ui/icons/TwitterIcon";
+import FacebookIcon from "../common/svg/Social/Facebook.svg";
+import InstagramIcon from "../common/svg/Social/Instagram.png";
+import YoutubeIcon from "../common/svg/Social/YouTube.png";
+import TiktokIcon from "../common/svg/Social/Tiktok.png";
+import web from "../common/svg/www.svg";
+import HeaderFlagCicle from "../ui/HeaderFlagCicle";
 
 const NavMenu = () => {
   return (
-    <footer className={styles.header}>
+    <nav className={styles.nav_menu}>
       <div className={styles.container}>
         <div className={styles.header_row}>
           <div className={styles.header_logo}>
@@ -66,7 +66,7 @@ const NavMenu = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </nav>
   );
 };
 

@@ -55,26 +55,32 @@ const Header = () => {
       </div>
       <Slider {...settings}>
         <div>
-          <div className={styles.container}>
-            <div
-              className={`${globalStyles.header_title} ${styles.header_title1}`}
-            >
-              для
-            </div>
-            <div
-              className={`${globalStyles.header_title} ${styles.header_title2}`}
-            >
-              героїв
-            </div>
-            <div className={`${globalStyles.text16B} ${styles.header_text16B}`}>
-              ДОПОМАГАЄМО ГЕРОЯМ УКРАЇНИ НА ФРОНТІ І В ТИЛУ
-            </div>
-            <div>
-              <ButtonToPartner name="Стати партнером" />
-            </div>
+          <div className={styles.position_container}>
+            <div className={styles.banner1_container}>
+              <div className={styles.block_left}>
+                <div
+                  className={`${globalStyles.header_title} ${styles.header_title1}`}
+                >
+                  для
+                </div>
+                <div
+                  className={`${globalStyles.header_title} ${styles.header_title2}`}
+                >
+                  героїв
+                </div>
+                <div
+                  className={`${globalStyles.text16B} ${styles.header_text16B}`}
+                >
+                  ДОПОМАГАЄМО ГЕРОЯМ УКРАЇНИ НА ФРОНТІ І В ТИЛУ
+                </div>
+                <div>
+                  <ButtonToPartner name="Стати партнером" />
+                </div>
+              </div>
 
-            <div className={` ${styles.header_banner1}`}>
-              <img src={banner1} alt="banner_img" />
+              <div className={` ${styles.header_banner1}`}>
+                <img src={banner1} alt="banner_img" />
+              </div>
             </div>
           </div>
         </div>

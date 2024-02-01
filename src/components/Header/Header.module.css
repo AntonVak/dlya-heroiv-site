@@ -4,20 +4,28 @@
   position: relative;
   height: 100%;
   background-image: url("../common/img/dark_bg.png");
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container {
-  
+  /* position: relative; */
   max-width: 1440px;
   padding: 0 70px;
   margin: 0 auto;
   padding-bottom: 100px;
-  overflow: visible;
+  /* overflow: visible; */
+  overflow: hidden;
 }
 .header_title1 {
   margin-top: 80px;
 }
 .header_title2 {
+}
+.header_title1_3D {
+  margin-top: 80px;
+  font-size: 80px;
+}
+.header_title2_3D {
+  font-size: 80px;
 }
 .header_text16B {
   color: var(--white);
@@ -25,16 +33,97 @@
   max-width: 290px;
 }
 .header_banner1 {
-  /* position: absolute; */
-  top: 175px;
-  right: -150px;
-  z-index:2;
+  position: absolute;
+  top: 0px;
+  left: 1736px;
+  /* right: -150px; */
+  /* z-index: 2; */
+  overflow: hidden;
+  img {
+    overflow: hidden;
+  }
+}
+.position_container {
+  position: relative;
+}
+.header_banner2 {
+  position: absolute;
+  top: 0px;
+  right: 320px;
+  z-index: 5;
+}
+.header_banner3 {
+  position: absolute;
+  top: 60px;
+  right: 120px;
+  z-index: 5;
+  img {
+    height: 600px;
+    width: 900px;
+  }
+}
+.header_banner4 {
+  position: absolute;
+  top: -150px;
+  right: 0px;
+  z-index: -1;
+  img {
+    /* height: 600px; */
+    width: 100vw;
+  }
+}
+.header_banner5 {
+  position: absolute;
+  top: -190px;
+  right: 20px;
+  img {
+    height: 820px;
+    width: 820px;
+  }
+  
+}
+.header_banner6 {
+  position: absolute;
+  top: 50px;
+  right: 135px;
+  img {
+    height: 512px;
+    width: 410px;
+  }
+  
 }
 
 .header_icon {
-  /* position: absolute; */
-  top: 20px;
+  position: absolute;
+  top: 50px;
   right: 5px;
+  /* z-index: 4; */
+}
+.arrow_left {
+  position: absolute;
+  right: 170px;
+  bottom: 40px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  z-index: 8;
+}
+.arrow_right {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+.btn_flex {
+  display: flex;
+  gap: 10px;
+  
+}
+.btn_flex_3D {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  
 }
 
 @media (max-width: 1110px) {

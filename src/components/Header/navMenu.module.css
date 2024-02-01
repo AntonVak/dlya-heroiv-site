@@ -1,7 +1,9 @@
 @import "../stylesGlobal/globalStyles.module.css";
 
 
-
+.nav_menu {
+  /* z-index: 1; */
+}
 .container {
   max-width: 1440px;
   padding: 0 70px;
@@ -12,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+  /* background-color: transparent; */
 }
 .header_logo {
 }

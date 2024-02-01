@@ -1,0 +1,65 @@
+@import "../stylesGlobal/globalStyles.module.css";
+
+.btn_topartner {
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: 240px;
+  border: 1px solid var(--yellow);
+  border-radius: 160px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+.round_bg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.donat_text14Fw4 {
+  padding-left: 60px;
+  white-space: nowrap;
+  color: var(--white);
+}
+.text14Fw4_btn {
+  padding-left: 50px;
+  white-space: nowrap;
+}
+._button {
+  margin-top: 80px;
+}
+.donat_button {
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .btn_topartner {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .btn_foto {
+    width: 130px;
+  }
+  .text_btn_foto {
+    font-size: 12px;
+    padding-left: 33px;
+    white-space: nowrap;
+  }
+}

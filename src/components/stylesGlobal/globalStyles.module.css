@@ -40,6 +40,15 @@ p {
     margin-right: 0px;
   }
 }
+.title_aboutUs {
+font-family: Unbounded;
+font-size: 65px;
+font-weight: 700;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
 .header_title {
   color: #FFF;
   font-family: Unbounded;

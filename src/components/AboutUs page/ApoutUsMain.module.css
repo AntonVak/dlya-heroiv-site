@@ -1,0 +1,84 @@
+.aboutUs_section {
+  /* height: 100%; */
+  background-image: url("../common/img/dark_bg.png");
+  position: relative;
+  overflow: hidden;
+}
+.aboutUs_img {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right:0;
+
+
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+ 
+}
+.block_title {
+  padding-top: 330px;
+}
+._title_aboutUs {
+  
+  color: var(--white);
+  max-width: 330px;
+
+}
+.title_color {
+  color: var(--yellow);
+  white-space: nowrap;
+}
+.subtitle {
+  padding: 20px 0 120px;
+  color: var(--white);
+  max-width: 440px;
+
+
+}
+@media (max-width: 768px) {
+  .aboutUs_section {
+    height: 100vh;
+  }
+  .aboutUs_img {
+    height: 50%;
+    top: 0;
+    right:0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .block_title {
+    padding-top: 150px;
+  }
+  ._title_aboutUs {
+    font-size: 38px;
+  }
+  .title_color {
+    font-size: 38px;
+  }
+  .subtitle {
+    
+    max-width: 330px;
+  
+  
+  }
+
+}
+@media (max-width: 500px) {
+  .aboutUs_section {
+    height: 100vh;
+  }
+  .aboutUs_img {
+    height: 70%;
+    width:200%;
+    top: 350px;
+    bottom: 0;
+  }
+  .subtitle {
+    padding: 20px 0 250px;
+  }
+}

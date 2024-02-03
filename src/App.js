@@ -15,6 +15,7 @@ import PartnersShip from "./components/ToBePartnerPage/Partnership";
 import ThankesPartners from "./components/ToBePartnerPage/ThankesPartners";
 import OurProgectsPage from "./components/Page Projects/OurProgectsPage";
 import Header from "./components/Header/Header";
+import AboutUsMain from "./components/AboutUs page/ApoutUsMain";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <OurPartners />
       <AfterVictory />
       <PayInfo />
+      <AboutUsMain/>
       <ForWhat />
       <OurTeam />
       <HistoryFund />

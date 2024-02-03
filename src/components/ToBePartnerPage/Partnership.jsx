@@ -1,6 +1,7 @@
 import styles from "./partnersShip.module.css";
 import globalStyles from "../stylesGlobal/globalStyles.module.css";
 import BtnArrowPartnersBlock from "./BtnArrowPartnersBlock";
+import bottom_line from "../common/svg/line_bottom.png";
 
 const PartnersShip = () => {
   return (
@@ -40,6 +41,7 @@ const PartnersShip = () => {
           <BtnArrowPartnersBlock className={styles.btn_yellow} text="Запропонувати свій формат" width="310px" color="var(--yellow)" />
         </div>
       </div>
+      <img src={bottom_line} alt="svg" />
     </section>
   );
 };

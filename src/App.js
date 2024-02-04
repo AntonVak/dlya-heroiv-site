@@ -8,7 +8,7 @@ import OurPartners from "./components/OurPartners/OurPartners";
 import OurProgress from "./components/OurProgress";
 import OurValues from "./components/OurValues";
 import PayInfo from "./components/PayInfo/PayInfo";
-import TalkAboutUs from "./components/AboutUs page/TalkAboutUs";
+import TalkAboutUs from "./components/AboutUs page/TalkAboutUs/TalkAboutUs";
 import Certificates from "./components/AboutUs page/Сertificates";
 import AboutFund from "./components/ToBePartnerPage/AboutFund";
 import PartnersShip from "./components/ToBePartnerPage/Partnership";
@@ -16,6 +16,7 @@ import ThankesPartners from "./components/ToBePartnerPage/ThankesPartners";
 import OurProgectsPage from "./components/Page Projects/OurProgectsPage";
 import Header from "./components/Header/Header";
 import AboutUsMain from "./components/AboutUs page/ApoutUsMain";
+import ToBePartnerMain from "./components/ToBePartnerPage/ToBePartnerMain";
 
 function App() {
   return (
@@ -31,8 +32,9 @@ function App() {
       <ForWhat />
       <OurTeam />
       <HistoryFund />
-      <TalkAboutUs />
+      {/* <TalkAboutUs /> */}
       <Certificates />
+      <ToBePartnerMain/>
       <AboutFund />
       <PartnersShip />
       <ThankesPartners />

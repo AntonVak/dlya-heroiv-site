@@ -1,0 +1,108 @@
+.ToBePartner_section {
+  height: 100%;
+  background-image: url("../common/img/dark_bg.png");
+  position: relative;
+  overflow: hidden;
+  /* z-index: -2; */
+}
+.ToBePartner_img {
+  position: absolute;
+  height: 90%;
+  bottom: -30px;
+  right: -80px;
+  /* z-index: -1; */
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+.block_title {
+  margin: 100px 0 150px;
+  /* padding-top: 100px; */
+  z-index: 2;
+}
+._title_aboutUs {
+  color: var(--white);
+  max-width: 330px;
+  z-index: 2;
+}
+.title_color {
+  color: var(--yellow);
+  white-space: nowrap;
+ 
+}
+.subtitle {
+  padding-top: 20px;
+  color: var(--white);
+  max-width: 440px;
+}
+@media (max-width: 1024px) {
+  .ToBePartner_img {
+    height: 80%;
+    bottom: 0px;
+    right: -100px;
+  }
+  ._title_aboutUs {
+    font-size: 55px;
+  }
+  .subtitle {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ToBePartner_section {
+    /* height: 100vh; */
+  }
+  .block_title {
+    margin: 80px 0 45%;
+    z-index: -1;
+  }
+  .ToBePartner_img {
+    height: 70%;
+    bottom: 0px;
+    right: 0;
+    z-index: 0;
+    img{
+       z-index: ;
+    }
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .block_title {
+   
+  }
+  ._title_aboutUs {
+    font-size: 38px;
+  }
+  .title_color {
+    font-size: 38px;
+  }
+  .subtitle {
+    max-width: 330px;
+    
+  }
+}
+@media (max-width: 500px) {
+  .ToBePartner_section {
+    height: 100vh;
+  }
+  .ToBePartner_img {
+    
+    right: -270px;
+    
+    bottom: -30px;
+  }
+  .subtitle {
+    padding: 20px 0 250px;
+  }
+  ._title_aboutUs {
+    font-size: 30px;
+  }
+  .title_color {
+    font-size: 30px;
+  }
+}

@@ -12,7 +12,7 @@ const FinishProjects = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 400,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <ButtonSliderLeft />,

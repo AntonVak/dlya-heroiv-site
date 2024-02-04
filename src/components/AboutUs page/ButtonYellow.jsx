@@ -1,6 +1,6 @@
 
 import youTubeImg from "../common/svg/youtube.png";
-import styles from "./talkaboutUs.module.css";
+import styles from "../AboutUs page/TalkAboutUs/talkaboutUs.module.css";
 import globalStyles from "../stylesGlobal/globalStyles.module.css";
 
 const ButtonYellow = () => {

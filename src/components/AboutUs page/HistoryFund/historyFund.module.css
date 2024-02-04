@@ -44,8 +44,8 @@
 }
 .arrow_left_history {
   position: absolute;
-  right: 70px;
-  top: -60px;
+  right: 0px;
+  top: 0px;
   transform: translateY(-50%);
 }
 .arrow_right_history {

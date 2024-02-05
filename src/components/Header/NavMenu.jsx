@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navMenu.module.css";
 import LogoIcon from "../common/svg/Group.png";
 import TwitterIcon from "../ui/icons/TwitterIcon";
@@ -10,7 +10,9 @@ import web from "../common/svg/www.svg";
 import HeaderFlagCicle from "../ui/HeaderFlagCicle";
 import BurgerButton from "./BurgerButton";
 
-const NavMenu = () => {
+const NavMenu = ({ isNavActive, handleNavClick }) => {
+ 
+
   return (
     <nav className={styles.nav_menu}>
       <div className={styles.container}>
@@ -21,7 +23,8 @@ const NavMenu = () => {
             </a>
           </div>
           <div className={styles.header_menu}>
-            <div className={styles.header_nav}>
+            <div className={`${styles.header_nav} ${isNavActive ? styles.active : ""}`}
+            >
               <a href="#">
                 <div className={styles.header_nav_text}>Про фонд</div>
               </a>
@@ -47,7 +50,7 @@ const NavMenu = () => {
             
               <a href="#">
               <TwitterIcon/>
-                {/* <img src="" alt="Twitter" /> */}
+               
               </a>
               <a href="#">
                 <img src={FacebookIcon} alt="" />
@@ -66,7 +69,7 @@ const NavMenu = () => {
             <div className={styles.header_web}>
                 <img src={web} alt="" />
             </div>
-            <BurgerButton/>
+            <BurgerButton handleNavClick={handleNavClick}/>
           </div>
         </div>
       </div>

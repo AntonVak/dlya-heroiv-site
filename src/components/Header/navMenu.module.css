@@ -1,6 +1,5 @@
 @import "../stylesGlobal/globalStyles.module.css";
 
-
 .nav_menu {
   /* z-index: 1; */
 }
@@ -28,7 +27,7 @@
 }
 .header_menu {
   display: flex;
-  width:100%;
+  width: 100%;
   align-items: center;
   height: 81px;
   border-right: 1px solid #e2e2e2;
@@ -36,11 +35,8 @@
 }
 .header_nav {
   display: flex;
-  
   gap: 40px;
   padding: 0px 60px 0px 60px;
-  
-  
 }
 .header_nav_text {
   white-space: nowrap;
@@ -65,7 +61,7 @@
   margin-left: auto;
   img {
     width: 40px;
-    height:40px;
+    height: 40px;
   }
 }
 .vertical_line {
@@ -77,10 +73,25 @@
 @media (max-width: 1300px) {
   .header_nav {
     display: none;
-    justify-content: center;
-    padding: 0px 20px 0px 20px;
+    /* transform: translateX(-100%); */
   }
-  
+  .active {
+    display:block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    z-index: 9; 
+    transition: transform 0.3s ease-in-out; 
+    overflow-y: auto; 
+
+  }
+
   .header_social {
     justify-content: center;
     margin: 0px 20px;
@@ -101,7 +112,6 @@
       height: 78px;
     }
   }
-  
 }
 @media (max-width: 800px) {
   .container {
@@ -111,7 +121,6 @@
     flex: 0 0 80%;
   }
   .header_support {
-    display: none;  
+    display: none;
   }
-  
 }

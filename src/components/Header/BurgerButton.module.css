@@ -1,32 +1,40 @@
 .burgerButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 34px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .bar {
-    width: 34px;
-    height: 3px;
-    background-color: var(--yellow);
-    border-radius: 2px;
-    transition: transform 0.3s, background-color 0.3s;
-  }
-  
-  .open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  display: none;
+}
+
+  @media (max-width: 1300px) {
+    .burgerButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 34px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+    
+    .bar {
+      width: 34px;
+      height: 3px;
+      background-color: var(--yellow);
+      border-radius: 2px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    
+    .open .bar:nth-child(1) {
+      transform: translateY(14px) rotate(45deg);
+    }
+    
+    .open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .open .bar:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+
   }

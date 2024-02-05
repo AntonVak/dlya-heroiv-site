@@ -13,8 +13,14 @@ import banner6 from "../common/img/desktop_banner_6.png";
 import Slider from "react-slick";
 import ButtonSliderLeft from "./ButtonSliderLeft";
 import ButtonSliderRight from "./ButtonSliderRight";
+import { useState } from "react";
 
 const Header = () => {
+  const [isNavActive, setIsNavActive] = useState(false);
+
+  const handleNavClick = () => {
+    setIsNavActive(!isNavActive);
+  };
   const settings = {
     dots: false,
     infinite: true,
@@ -50,7 +56,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={` ${styles.nav_Menu}`}>
-        <NavMenu />
+        <NavMenu isNavActive={isNavActive} handleNavClick={handleNavClick} />
       </div>
 
       <div className={` ${styles.header_icon}`}>

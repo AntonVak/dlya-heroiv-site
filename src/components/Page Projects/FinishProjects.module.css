@@ -105,7 +105,7 @@
   }
   .item_block {
     padding-right: 0px;
-    /* width: 0%; */
+    max-width: 98%;
     
   }
   .arrow_left {
@@ -132,8 +132,9 @@
     margin-bottom: 80px;
   }
   .item_block {
-    padding-right: 0px;
+    padding-right: 20px;
     padding-bottom: 20px;
+    margin: 0px 10px;
   }
   ._text16B {
     max-width: 180px;

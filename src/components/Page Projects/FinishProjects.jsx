@@ -14,36 +14,35 @@ const FinishProjects = () => {
     infinite: true,
     speed: 800,
     slidesToShow: 3,
-    slidesToScroll: 1,
+   
     nextArrow: <ButtonSliderLeft />,
     prevArrow: <ButtonSliderRight />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          
+        },
+      },
+      {
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           
-         
-        }
+        },
       },
       {
-        breakpoint: 600,
+        breakpoint: 650,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           
-        }
+        },
       },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          
-        }
-      },
-    ]
+    ],
   };
   return (
     <section className={styles.finishProjects}>
@@ -52,38 +51,9 @@ const FinishProjects = () => {
           <div className={`${globalStyles.title} ${styles.finish_title}`}>
             Завершені проєкти
           </div>
-          <div className={styles.btn_slider}>
-          </div>
+          <div className={styles.btn_slider}></div>
         </div>
-        {/* <div className={styles.wrapper_block}>
-          <div className={styles.item_block}>
-            <img src={Img1} alt="" />
-            <div className={` ${styles.text_block}`}>
-              <div className={` ${styles._text16B}`}>
-                Збір коштів на 20 FPV дронів
-              </div>
-              <BtnRoundArrow />
-            </div>
-          </div>
-          <div className={styles.item_block}>
-            <img src={Img1} alt="" />
-            <div className={` ${styles.text_block}`}>
-              <div className={` ${styles._text16B}`}>
-                Збір коштів на 20 FPV дронів
-              </div>
-              <BtnRoundArrow />
-            </div>
-          </div>
-          <div className={styles.item_block}>
-            <img src={Img1} alt="" />
-            <div className={` ${styles.text_block}`}>
-              <div className={` ${styles._text16B}`}>
-                Збір коштів на 20 FPV дронів
-              </div>
-              <BtnRoundArrow />
-            </div>
-          </div>
-        </div> */}
+
         <Slider {...settings}>
           <div>
             <div className={styles.item_block}>

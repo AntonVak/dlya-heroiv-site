@@ -94,10 +94,7 @@ export const GlobalStyles = () => {
 export const Container = styled.div`
   width: min(100% - 0rem, 90rem);
   margin-inline: auto;
-  /* padding: 0 4.38rem; */
-  background-color: azure;
-   /* display: flex;
-  justify-content: center; */
+  
 `;
 
 

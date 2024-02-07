@@ -7,6 +7,9 @@
   --yellow: #fcb813;
   --grey: #b1b1b1;
 }
+html, body {
+height: 100%;
+}
 * a {
   text-decoration: none;
   color: inherit;

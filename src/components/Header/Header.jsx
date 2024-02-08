@@ -62,8 +62,10 @@ const Header = () => {
       <div className={` ${styles.header_icon}`}>
         <HeaderBgIcon />
       </div>
+      
+
       <Slider {...settings}>
-        {/* <div>
+        <div>
           <div className={styles.banner1_container}>
             <div className={styles.block_left}>
               <div
@@ -82,13 +84,13 @@ const Header = () => {
             </div>
 
             <div className={` ${styles.header_banner1}`}>
-              <img src={banner1} alt="banner_img" />
+              <img className={` ${styles.img_banner1}`} src={banner1} alt="banner_img" />
             </div>
           </div>
-        </div> */}
+        </div>
         <div>
           <div className={styles.container}>
-            <div className={styles.block_wrapper}>
+            
               <div className={styles.block_left}>
                 <div
                   className={`${globalStyles.header_title} ${styles.header_title1}`}
@@ -106,9 +108,9 @@ const Header = () => {
                 </div>
               </div>
               <div className={` ${styles.header_banner2}`}>
-                <img src={banner2} alt="banner_img" />
+                <img className={` ${styles.img_banner2}`} src={banner2} alt="banner_img" />
               </div>
-            </div>
+            
           </div>
         </div>
         <div>
@@ -131,12 +133,12 @@ const Header = () => {
                 </div>
               </div>
               <div className={` ${styles.header_banner3}`}>
-                <img src={banner3} alt="banner_img" />
+                <img className={` ${styles.img_banner3}`} src={banner3} alt="banner_img"  />
               </div>
             </div>
           </div>
         </div>
-        {/* <div>
+        <div>
           <div className={styles.container}>
             <div className={styles.block_left}>
               <div
@@ -150,18 +152,18 @@ const Header = () => {
               >
                 Проводимо благодійні концерти на підтримку ЗСУ
               </div>
-              <div>
+              <div className={` ${styles.btn_to_partner}`}>
                 <ButtonToPartner name="Стати партнером" />
               </div>
             </div>
 
             <div className={` ${styles.header_banner4}`}>
-              <img src={banner4} alt="banner_img" />
+              <img className={` ${styles.img_banner4}`} src={banner4} alt="banner_img" />
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div>
+        <div>
           <div className={styles.container}>
             <div className={styles.block_left}>
               <div
@@ -178,7 +180,7 @@ const Header = () => {
                 Розвиваємо напрям закупівлі дронів на потреби ЗСУ
               </div>
               <div className={` ${styles.btn_flex}`}>
-                <div>
+                <div className={` ${styles.btn_to_partner}`}>
                   <ButtonToPartner name="Зробити донат" />
                 </div>
                 <ButtonDetail name="Детальніше" />
@@ -186,12 +188,12 @@ const Header = () => {
             </div>
 
             <div className={` ${styles.header_banner5}`}>
-              <img src={banner5} alt="banner_img" />
+              <img className={` ${styles.img_banner5}`} src={banner5} alt="banner_img" />
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div>
+        <div>
           <div className={styles.container}>
             <div className={styles.block_left}>
               <div
@@ -210,7 +212,7 @@ const Header = () => {
                 Друкуємо 3D моделі на потреби ЗСУ
               </div>
               <div className={` ${styles.btn_flex_3D}`}>
-                <div>
+                <div className={` ${styles.btn_to_partner}`}>
                   <ButtonToPartner name="Зробити донат" />
                 </div>
                 <ButtonDetail name="Детальніше" />
@@ -218,11 +220,12 @@ const Header = () => {
             </div>
 
             <div className={` ${styles.header_banner6}`}>
-              <img src={banner6} alt="banner_img" />
+              <img className={` ${styles.img_banner6}`} src={banner6} alt="banner_img" />
             </div>
           </div>
-        </div> */}
+        </div>
       </Slider>
+      
     </header>
   );
 };

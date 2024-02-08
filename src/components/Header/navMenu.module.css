@@ -1,7 +1,7 @@
 @import "../stylesGlobal/globalStyles.module.css";
 
 .nav_menu {
-  /* z-index: 1; */
+  position: fixed;
 }
 .container {
   max-width: 1440px;
@@ -73,22 +73,31 @@
 @media (max-width: 1300px) {
   .header_nav {
     display: none;
-    /* transform: translateX(-100%); */
+    
+  }
+  .header_row {
+    
+    z-index: 10; 
   }
   .active {
-    display:block;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     height: 100vh;
     width: 100vw;
-    top: 0;
-    left: 0;
-    transform: translateX(0);
-    background-color: #fff; 
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    background-image: url("../common/img/dark_bg.png"); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
+    padding: 160px 20px 20px;
     z-index: 9; 
     transition: transform 0.3s ease-in-out; 
     overflow-y: auto; 
+    font-size: 40px;
+    gap: 45px;
 
   }
 

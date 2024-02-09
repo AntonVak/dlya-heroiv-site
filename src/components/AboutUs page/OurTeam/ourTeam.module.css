@@ -128,46 +128,7 @@
   .ourTeam {
     margin-top: 80px;
   }
-  .block_foto {
-    /* grid-template-columns: 158px 158px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center; */
-    overflow-x: auto;
-    overflow-y: clip;
-    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
-    grid-template-rows: 1fr ;
-    gap:0;
-    
-    
-  }
-  .border_big {
-    width: 128px;
-  }
-  /* .border_main {
-    position: relative;
-    width: 158px;
-    height: 260px;
-    flex-direction: column;
-    align-items: center;
-    grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-    img {
-      margin-top: 20px;
-      width: 120px;
-    }
-  } */
-  .border_main2 {
-    width: 200px;
-    height: 260px;
-    width: 128px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 3;
-  }
+  
   .border_foto {
     justify-content: center;
   }

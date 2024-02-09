@@ -26,6 +26,11 @@
   margin-top: 40px;
   flex-wrap: wrap;
 }
+
+.bottom_line_img {
+  height: 40px;
+  background-image: url("../common/svg/line_bottom.png");
+}
 @media (max-width: 1024px) {
  
   ._button {

@@ -38,10 +38,15 @@ const PartnersShip = () => {
             text="фінансова допомога під конкретний благодійний проєкт"
             width="530px"
           />
-          <BtnArrowPartnersBlock className={styles.btn_yellow} text="Запропонувати свій формат" width="310px" color="var(--yellow)" />
+          <BtnArrowPartnersBlock
+            className={styles.btn_yellow}
+            text="Запропонувати свій формат"
+            width="310px"
+            color="var(--yellow)"
+          />
         </div>
       </div>
-      <img src={bottom_line} alt="svg" />
+      <div className={styles.bottom_line_img}></div>
     </section>
   );
 };

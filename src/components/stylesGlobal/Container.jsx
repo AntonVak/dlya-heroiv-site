@@ -95,6 +95,10 @@ export const Container = styled.div`
   width: min(100% - 0rem, 90rem);
   margin-inline: auto;
   
+    /* height: 100vh;
+    width: 100vw; */
+ 
+  
 `;
 
 

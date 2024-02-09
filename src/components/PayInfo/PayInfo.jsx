@@ -66,8 +66,8 @@ const PayInfo = () => {
           </div>
         </div>
       </div>
-      <div>
-        <img src={bottom_line} alt="svg" />
+      <div className={styles.bottom_line_img}>
+        
       </div>
       
 

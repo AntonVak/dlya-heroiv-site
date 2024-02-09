@@ -266,6 +266,10 @@
   word-break: break-all;
   padding-right: 70px;
 }
+.bottom_line_img {
+  background-image: url("../common/svg/line_bottom.png");
+  height: 40px;
+}
 
 
 

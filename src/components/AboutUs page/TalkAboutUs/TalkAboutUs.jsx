@@ -13,8 +13,9 @@ const TalkAboutUs = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    // slidesToScroll: 1,
+    
     nextArrow: <ButtonSliderLeft />,
     prevArrow: <ButtonSliderRight />,
     responsive: [
@@ -26,9 +27,9 @@ const TalkAboutUs = () => {
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1180,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -54,56 +55,59 @@ const TalkAboutUs = () => {
               ділимося новинами та знайомимоз командою нашого фонду
             </div>
 
-            <div className={styles.block_button}>
+            <div className={`${styles.block_button} ${styles.button_top}`}>
               <ButtonYellow />
             </div>
           </div>
 
           <div className={styles.block_right}>
-          <Slider {...settings}>
-            <div>
-              <div className={styles.video_content}>
-                <div className={styles.img_content}>
-                  <img src={videoImg1} alt="" />
-                  <div className={` ${styles.round_button}`}>
-                    <img src={ArrowIcon} alt="" />
+            <Slider {...settings}>
+              <div >
+                <div className={styles.video_content}>
+                  <div className={styles.img_content}>
+                    <img src={videoImg1} alt="" />
+                    <div className={` ${styles.round_button}`}>
+                      <img src={ArrowIcon} alt="" />
+                    </div>
+                  </div>
+
+                  <div className={`${globalStyles.text14B} ${styles._text14B}`}>
+                    Інтерв’ю з “Відкритого1”
                   </div>
                 </div>
-
-                <div className={`${globalStyles.text14B} ${styles._text14B}`}>
-                  Інтерв’ю з “Відкритого1”
-                </div>
               </div>
-            </div>
-            <div>
-              <div className={styles.video_content}>
-                <div className={styles.img_content}>
-                  <img src={videoImg2} alt="" />
-                  <div className={` ${styles.round_button}`}>
-                    <img src={ArrowIcon} alt="" />
+              <div>
+                <div className={styles.video_content}>
+                  <div className={styles.img_content}>
+                    <img src={videoImg2} alt="" />
+                    <div className={` ${styles.round_button}`}>
+                      <img src={ArrowIcon} alt="" />
+                    </div>
+                  </div>
+
+                  <div className={`${globalStyles.text14B} ${styles._text14B}`}>
+                    Інтерв’ю з “Відкритого2”
                   </div>
                 </div>
-
-                <div className={`${globalStyles.text14B} ${styles._text14B}`}>
-                  Інтерв’ю з “Відкритого2”
-                </div>
               </div>
-            </div>
-            <div>
-              <div className={styles.video_content}>
-                <div className={styles.img_content}>
-                  <img src={videoImg2} alt="" />
-                  <div className={` ${styles.round_button}`}>
-                    <img src={ArrowIcon} alt="" />
+              <div>
+                <div className={styles.video_content}>
+                  <div className={styles.img_content}>
+                    <img src={videoImg2} alt="" />
+                    <div className={` ${styles.round_button}`}>
+                      <img src={ArrowIcon} alt="" />
+                    </div>
+                  </div>
+
+                  <div className={`${globalStyles.text14B} ${styles._text14B}`}>
+                    Інтерв’ю з “Відкритого3”
                   </div>
                 </div>
-
-                <div className={`${globalStyles.text14B} ${styles._text14B}`}>
-                  Інтерв’ю з “Відкритого3”
-                </div>
               </div>
+            </Slider>
+            <div className={`${styles.block_button} ${styles.button_bottom}`}>
+              <ButtonYellow />
             </div>
-          </Slider>
           </div>
         </div>
       </div>

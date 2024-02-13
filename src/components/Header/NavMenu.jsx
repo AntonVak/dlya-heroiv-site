@@ -9,9 +9,10 @@ import TiktokIcon from "../common/svg/Social/Tiktok.png";
 import web from "../common/svg/www.svg";
 import HeaderFlagCicle from "../ui/HeaderFlagCicle";
 import BurgerButton from "./BurgerButton";
+import ButtonToPartner from "./ButtonDetail";
 
 const NavMenu = ({ isNavActive, handleNavClick }) => {
- 
+ console.log(isNavActive);
 
   return (
     <nav className={styles.nav_menu}>
@@ -22,8 +23,8 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
               <img src={LogoIcon} alt="Logo" />
             </a>
           </div>
-          <div className={styles.header_menu}>
-            <div className={`${styles.header_nav} ${isNavActive ? styles.active : ""}`}
+          <div className={`${styles.header_menu} ${isNavActive ? styles.activ : ""}`}>
+            <div className={`${styles.header_nav} `}
             >
               <a href="#">
                 <div className={styles.header_nav_text}>Про фонд</div>
@@ -42,9 +43,14 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
             <div className={styles.header_support}>
               <HeaderFlagCicle />
               <a href="#">
-                <div className={styles.header_nav_text}>Підтримати</div>
+                <div className={`${styles.header_nav_text} ${styles.color_text}` }>Підтримати</div>
               </a>
             </div>
+            <div className={`${styles.btn_active} `} 
+            >
+              <ButtonToPartner name="Підтримати"/>
+            </div>
+            
             <div className={styles.vertical_line}></div>
             <div className={styles.header_social}>
             
@@ -69,10 +75,31 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
             <div className={styles.header_web}>
                 <img src={web} alt="" />
             </div>
+            <div className={styles.burger_wrapper}>
             <BurgerButton handleNavClick={handleNavClick}/>
+            </div>
+            
           </div>
+          
         </div>
       </div>
+      <div className={`${styles.mobile_menu} ${isNavActive ? styles.active2 : ""}`}>
+          <div className={`${styles.header_nav2} `}
+            >
+              <a href="#">
+                <div className={styles.header_nav_text}>Про фонд</div>
+              </a>
+              <a href="#">
+                <div className={styles.header_nav_text}>Проєкти</div>
+              </a>
+              <a href="*">
+                <div className={styles.header_nav_text}>Звітність</div>
+              </a>
+              <a href="*">
+                <div className={styles.header_nav_text}>Стати партнером</div>
+              </a>
+            </div>
+          </div>
     </nav>
   );
 };

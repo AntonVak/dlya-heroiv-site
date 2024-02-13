@@ -62,11 +62,10 @@ const Header = () => {
       <div className={` ${styles.header_icon}`}>
         <HeaderBgIcon />
       </div>
-      
 
       <Slider {...settings}>
         <div>
-          <div className={styles.banner1_container}>
+          <div className={styles.container}>
             <div className={styles.block_left}>
               <div
                 className={`${globalStyles.header_title} ${styles.header_title1}`}
@@ -78,44 +77,51 @@ const Header = () => {
               >
                 ДОПОМАГАЄМО ГЕРОЯМ УКРАЇНИ НА ФРОНТІ І В ТИЛУ
               </div>
-              <div className={` ${styles.btn_to_partner}`}>
-                <ButtonToPartner name="Стати партнером" />
+            </div>
+            <div className={` ${styles.btn_to_partner}`}>
+              <ButtonToPartner name="Стати партнером" />
+            </div>
+            <img
+              className={` ${styles.img_banner1}`}
+              src={banner1}
+              alt="banner_img"
+            />
+            {/* <div className={` ${styles.header_banner1}`}>
+              
+            </div> */}
+          </div>
+        </div>
+        <div>
+          <div className={styles.container}>
+            <div className={styles.block_left}>
+              <div
+                className={`${globalStyles.header_title} ${styles.header_title1}`}
+              >
+                для героїв
+              </div>
+
+              <div
+                className={`${globalStyles.text16B} ${styles.header_text16B}`}
+              >
+                Допомагаємо героям медичних закладів
               </div>
             </div>
+            <div className={` ${styles.btn_to_partner}`}>
+              <ButtonToPartner name="Стати партнером" />
+            </div>
 
-            <div className={` ${styles.header_banner1}`}>
-              <img className={` ${styles.img_banner1}`} src={banner1} alt="banner_img" />
+            <div className={` ${styles.header_banner2}`}>
+              <img
+                className={` ${styles.img_banner2}`}
+                src={banner2}
+                alt="banner_img"
+              />
             </div>
           </div>
         </div>
         <div>
           <div className={styles.container}>
             
-              <div className={styles.block_left}>
-                <div
-                  className={`${globalStyles.header_title} ${styles.header_title1}`}
-                >
-                  для героїв
-                </div>
-
-                <div
-                  className={`${globalStyles.text16B} ${styles.header_text16B}`}
-                >
-                  Допомагаємо героям медичних закладів
-                </div>
-                <div className={` ${styles.btn_to_partner}`}>
-                  <ButtonToPartner name="Стати партнером" />
-                </div>
-              </div>
-              <div className={` ${styles.header_banner2}`}>
-                <img className={` ${styles.img_banner2}`} src={banner2} alt="banner_img" />
-              </div>
-            
-          </div>
-        </div>
-        <div>
-          <div className={styles.container}>
-            <div className={styles.block_wrapper}>
               <div className={styles.block_left}>
                 <div
                   className={`${globalStyles.header_title} ${styles.header_title1}`}
@@ -128,18 +134,23 @@ const Header = () => {
                 >
                   Надаємо гуманітарну допомогу постраждалому населенню
                 </div>
-                <div className={` ${styles.btn_to_partner}`}>
-                  <ButtonToPartner name="Стати партнером" />
-                </div>
               </div>
+              <div className={` ${styles.btn_to_partner}`}>
+                <ButtonToPartner name="Стати партнером" />
+              </div>
+
               <div className={` ${styles.header_banner3}`}>
-                <img className={` ${styles.img_banner3}`} src={banner3} alt="banner_img"  />
+                <img
+                  className={` ${styles.img_banner3}`}
+                  src={banner3}
+                  alt="banner_img"
+                />
               </div>
             </div>
-          </div>
+          
         </div>
         <div>
-          <div className={styles.container}>
+          <div className={`${styles.container} ${styles.bg_bunner4}`}>
             <div className={styles.block_left}>
               <div
                 className={`${globalStyles.header_title} ${styles.header_title1}`}
@@ -152,14 +163,18 @@ const Header = () => {
               >
                 Проводимо благодійні концерти на підтримку ЗСУ
               </div>
-              <div className={` ${styles.btn_to_partner}`}>
-                <ButtonToPartner name="Стати партнером" />
-              </div>
             </div>
-
-            <div className={` ${styles.header_banner4}`}>
-              <img className={` ${styles.img_banner4}`} src={banner4} alt="banner_img" />
+            <div className={` ${styles.btn_to_partner}`}>
+              <ButtonToPartner name="Стати партнером" />
             </div>
+            {/* <img
+              className={` ${styles.img_banner4}`}
+              src={banner4}
+              alt="banner_img"
+            /> */}
+            {/* <div className={` ${styles.header_banner4}`}>
+              
+            </div> */}
           </div>
         </div>
 
@@ -179,17 +194,22 @@ const Header = () => {
               >
                 Розвиваємо напрям закупівлі дронів на потреби ЗСУ
               </div>
-              <div className={` ${styles.btn_flex}`}>
-                <div className={` ${styles.btn_to_partner}`}>
-                  <ButtonToPartner name="Зробити донат" />
-                </div>
-                <ButtonDetail name="Детальніше" />
-              </div>
             </div>
 
-            <div className={` ${styles.header_banner5}`}>
-              <img className={` ${styles.img_banner5}`} src={banner5} alt="banner_img" />
+            <div className={` ${styles.btn_to_partner}`}>
+              <ButtonToPartner name="Зробити донат" />
             </div>
+            <div className={` ${styles.btn_about}`}>
+              <ButtonDetail name="Детальніше" />
+            </div>
+            <img
+              className={` ${styles.img_banner5}`}
+              src={banner5}
+              alt="banner_img"
+            />
+            {/* <div className={` ${styles.header_banner5}`}>
+              
+            </div> */}
           </div>
         </div>
 
@@ -202,7 +222,7 @@ const Header = () => {
                 3D моделі
               </div>
               <div
-                className={`${globalStyles.header_title} ${styles.header_title2_3D}`}
+                className={`${globalStyles.header_title} ${styles.header_title1_3D}`}
               >
                 для ЗСУ
               </div>
@@ -211,21 +231,23 @@ const Header = () => {
               >
                 Друкуємо 3D моделі на потреби ЗСУ
               </div>
-              <div className={` ${styles.btn_flex_3D}`}>
-                <div className={` ${styles.btn_to_partner}`}>
-                  <ButtonToPartner name="Зробити донат" />
-                </div>
-                <ButtonDetail name="Детальніше" />
-              </div>
             </div>
 
-            <div className={` ${styles.header_banner6}`}>
-              <img className={` ${styles.img_banner6}`} src={banner6} alt="banner_img" />
+            <div className={` ${styles.btn_to_partner}`}>
+              <ButtonToPartner name="Зробити донат" />
             </div>
+            <div className={` ${styles.btn_about}`}>
+              <ButtonDetail name="Детальніше" />
+            </div>
+            <img
+              className={` ${styles.img_banner6}`}
+              src={banner6}
+              alt="banner_img"
+            />
+            <div className={` ${styles.header_banner6}`}></div>
           </div>
         </div>
       </Slider>
-      
     </header>
   );
 };

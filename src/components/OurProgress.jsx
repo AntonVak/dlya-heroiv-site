@@ -62,8 +62,8 @@ const OurProgress = () => {
           </button>
         </div>
       </div>
-      <div>
-        <img className={style.bottom_line_img} src={bottom_line} alt="svg" />
+      <div className={style.bottom_line_img}>
+        {/* <img className={style.bottom_line_img} src={bottom_line} alt="svg" /> */}
       </div>
     </section>
   );

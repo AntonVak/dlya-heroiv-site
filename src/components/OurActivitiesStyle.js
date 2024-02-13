@@ -52,7 +52,9 @@ export const styles = {
 export const Section = styled.section`
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 100%;
+  width: 100%;
+  
   padding:  80px 70px 0;
   @media only screen and (max-width: 767.8px) {
     padding:  70px 20px 0;

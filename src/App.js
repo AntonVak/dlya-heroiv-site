@@ -32,7 +32,7 @@ function App() {
       <ForWhat />
       <OurTeam />
       <HistoryFund />
-      {/* <TalkAboutUs /> */}
+      <TalkAboutUs />
       <Certificates />
       <ToBePartnerMain/>
       <AboutFund />

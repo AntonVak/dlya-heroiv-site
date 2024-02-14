@@ -1,8 +1,8 @@
 import React from "react";
-
+import styles from "../../Header/navMenu.module.css";
 const TwitterIcon = () => {
   return (
-    <svg
+    <svg className={styles.icon_twitter}
       width="40"
       height="41"
       viewBox="0 0 40 41"

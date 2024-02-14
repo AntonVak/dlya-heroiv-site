@@ -33,19 +33,18 @@
 .donat_text14Fw4 {
   padding-left: 60px;
   white-space: nowrap;
-  color: var(--white);
+  color: var(--yellow);
 }
 .text14Fw4_btn {
   padding-left: 50px;
   white-space: nowrap;
 }
-._button {
-  /* margin-top: 80px; */
-}
+
 .donat_button {
   background-color: transparent;
   border: 1px solid var(--grey);
   margin-top: 80px;
+  
 }
 
 @media (max-width: 768px) {

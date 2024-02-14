@@ -38,3 +38,24 @@
     }
 
   }
+
+  @media (max-width: 500px) {
+    .burgerButton {
+      width: 24px;
+      height: 21px;
+    }
+    .bar {
+      width: 24px;
+    }
+    .open .bar:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+    
+    .open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .open .bar:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }

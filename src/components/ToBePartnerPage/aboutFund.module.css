@@ -53,8 +53,8 @@
   margin-top: 50px;
 }
 .block_right {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+    align-items: center;
 
   :first-child {
     margin-right: 20px;

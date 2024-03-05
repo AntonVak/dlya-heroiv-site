@@ -52,7 +52,7 @@
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
-  width: 810px;
+  width:100%;
 }
 .button_copy {
   position: relative;

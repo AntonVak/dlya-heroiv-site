@@ -9,7 +9,7 @@ const OurActivities = () => {
   return (
     <Container>
       <Section>
-        <Box sx={{ width: {xs: '335px', sm: "500px" } , mr: 2,}}>
+        <Box sx={{ width: {xs: '335px', sm: "100%" } , mr: 0,}}>
           <Typography sx={styles.subtitle}>Напрями</Typography>
           <Typography variant="h2" sx={styles.title}>
             наша <br /> <Span>дія</Span>льність

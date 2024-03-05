@@ -19,6 +19,7 @@ const Header = () => {
 
   const handleNavClick = () => {
     setIsNavActive(!isNavActive);
+    
   };
   const settings = {
     dots: false,

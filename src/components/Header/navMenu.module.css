@@ -86,6 +86,7 @@
   background-color: #333;
   background-image: url("../common/img/dark_bg.png");
   transition: left 0.9s;
+  overflow:auto;
 }
 
 @media (max-width: 1300px) {

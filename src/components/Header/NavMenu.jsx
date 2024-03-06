@@ -17,9 +17,11 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
   return (
     <nav className={styles.nav_menu}>
       <div className={styles.container}>
-        <div className={`${styles.header_row} ${
-              isNavActive ? styles.mobile_header_row : ""
-            }`} >
+        <div
+          className={`${styles.header_row} ${
+            isNavActive ? styles.mobile_header_row : ""
+          }`}
+        >
           <div className={styles.header_logo}>
             <a href="#">
               <img src={LogoIcon} alt="Logo" />
@@ -88,7 +90,7 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
       <div
         className={`${styles.mobile_menu} ${isNavActive ? styles.active2 : ""}`}
       >
-       {/* <div className={styles.header_row}>
+        {/* <div className={styles.header_row}>
           <div className={styles.header_logo}>
             <a href="#">
               <img src={LogoIcon} alt="Logo" />
@@ -152,29 +154,30 @@ const NavMenu = ({ isNavActive, handleNavClick }) => {
             </div>
           </div>
         </div> */}
-       
 
-        <div className={`${styles.header_nav2} `}>
-          <a href="#">
-            <div className={styles.header_nav_text}>Про фонд</div>
-          </a>
-          <a href="#">
-            <div className={styles.header_nav_text}>Проєкти</div>
-          </a>
-          <a href="*">
-            <div className={styles.header_nav_text}>Звітність</div>
-          </a>
-          <a href="*">
-            <div className={styles.header_nav_text}>Стати партнером</div>
-          </a>
-        </div>
-        <div className={`${styles.btn_active} `}>
-          <ButtonToPartner name="Підтримати" />
-        </div>
-       
-        <div className={styles.language_burger}>
-          <a href="">UA</a>
-          <a href="">ENG</a>
+        <div className={`${styles.wraper_header_nav2} `}>
+          <div className={`${styles.header_nav2} `}>
+            <a href="#">
+              <div className={styles.header_nav_text}>Про фонд</div>
+            </a>
+            <a href="#">
+              <div className={styles.header_nav_text}>Проєкти</div>
+            </a>
+            <a href="*">
+              <div className={styles.header_nav_text}>Звітність</div>
+            </a>
+            <a href="*">
+              <div className={styles.header_nav_text}>Стати партнером</div>
+            </a>
+          </div>
+          <div className={`${styles.btn_active} `}>
+            <ButtonToPartner name="Підтримати" />
+          </div>
+
+          <div className={styles.language_burger}>
+            <a href="">UA</a>
+            <a href="">ENG</a>
+          </div>
         </div>
       </div>
     </nav>
